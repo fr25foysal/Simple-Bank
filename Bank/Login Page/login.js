@@ -8,7 +8,7 @@ loginButton.addEventListener('click', function(){
     const loginBox = document.getElementById('login-box');
     
     
-    if (loginUsername === 'fr25foysal' && loginPassword === '@Foysal') {
+    if (loginUsername === 'khulJa' && loginPassword === 'simSim') {
         window.location.assign('Bank/Dashboard/dashboard.html')
     }
     else{
