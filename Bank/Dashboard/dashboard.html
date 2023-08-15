@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <main class="w-11/12 mx-auto mt-10 lg:w-3/4">
+        <h1 class="text-4xl font-extrabold text-center mb-8 bg-blue-950 lg:w-1/2 md:w-3/4 mx-auto text-white py-4 rounded-full">User Dashboard</h1>
+        <div class="grid lg:grid-cols-3 gap-4">
+            <div class="bg-sky-800 rounded-lg text-white p-12">
+                <h2 class="text-3xl font-medium mb-1">Total Deposit</h2>
+                <p class="text-3xl font-medium">$<span id="total-deposit">250</span></p>
+            </div>
+            <div class="bg-red-500 rounded-lg text-white p-12">
+                <h2 class="text-3xl font-medium mb-1">Total Withdraw</h2>
+                <p class="text-3xl font-medium">$<span id="total-withdraw">100</span></p>
+            </div>
+            <div class="bg-green-500 rounded-lg text-white p-12">
+                <h2 class="text-3xl font-medium mb-1">Total Balance</h2>
+                <p class="text-3xl font-medium">$<span id="total-balance">150</span></p>
+            </div>
+
+        </div>
+        <div class="grid lg:grid-cols-2 gap-4 mt-8">
+            <div class="bg-amber-800 rounded-lg  p-12">
+                <h2 class="text-3xl text-white font-medium mb-8">Deposit Money</h2>
+                <input id="deposit-input" type="text" placeholder="Deposit Amount" class="input input-bordered input-md input-warning w-full focus:outline-0" /> <br>
+                <input type="submit" value="Deposit" id="btn-deposit" class="btn btn-outline btn-md mt-4 mb-2 btn-warning"></input>
+            </div>
+            <div class="bg-fuchsia-700 rounded-lg  p-12">
+                <h2 class="text-3xl font-medium mb-8 text-white">Withdraw Money</h2>
+                <input id="withdraw-input" type="text" placeholder="Withdraw Amount" class="input input-bordered input-md input-warning w-full focus:outline-0" /> <br>
+                <input type="submit" value="Withdraw" id="btn-withdraw" class="btn btn-outline btn-md mt-4 mb-2 btn-warning"></input>
+            </div>
+        </div>
+    </main>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

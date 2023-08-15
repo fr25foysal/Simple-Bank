@@ -9,7 +9,7 @@ loginButton.addEventListener('click', function(){
     
     
     if (loginUsername === 'fr25foysal' && loginPassword === '@Foysal') {
-        window.location.href = 'https://tailwindcss.com/'
+        window.location.assign('Bank/Dashboard/dashboard.html')
     }
     else{
         loginBox.appendChild(newP)
