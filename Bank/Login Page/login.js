@@ -3,15 +3,17 @@ const newP = document.createElement('p');
     newP.innerText = 'Invalid Username or password';
     newP.className = 'text-white text-sm'
 loginButton.addEventListener('click', function(){
-    const loginUsername = document.getElementById('login-username').value;
-    const loginPassword = document.getElementById('login-password').value;
+    const loginUsername = document.getElementById('login-username');
+    const loginPassword = document.getElementById('login-password');
     const loginBox = document.getElementById('login-box');
     
     
-    if (loginUsername === 'khulJa' && loginPassword === 'simSim') {
+    if (loginUsername.value === 'khulJa' && loginPassword.value === 'simSim') {
         window.location.assign('/Bank/Dashboard/dashboard.html')
     }
     else{
         loginBox.appendChild(newP)
     }
+    loginUsername.value = '';
+    loginPassword.value = '';
 })
