@@ -9,7 +9,7 @@ loginButton.addEventListener('click', function(){
     
     
     if (loginUsername.value === 'khulJa' && loginPassword.value === 'simSim') {
-        window.location.assign('dashboard.html')
+        window.location.href = 'dashboard.html';
     }
     else{
         loginBox.appendChild(newP)
